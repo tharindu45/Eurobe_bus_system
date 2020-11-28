@@ -55,6 +55,7 @@ public class Route extends javax.swing.JFrame {
         jMenu1.setText("jMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Route");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 102));

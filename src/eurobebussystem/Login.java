@@ -78,12 +78,12 @@ public class Login extends javax.swing.JFrame {
 
         jLabel3.setBackground(new java.awt.Color(200, 11, 11));
         jLabel3.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(177, 221, 12));
-        jLabel3.setText("UserName :");
+        jLabel3.setForeground(new java.awt.Color(192, 250, 250));
+        jLabel3.setText("UserName(email/Emp-ID) :");
 
         jLabel4.setBackground(new java.awt.Color(200, 11, 11));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(177, 221, 12));
+        jLabel4.setForeground(new java.awt.Color(192, 250, 250));
         jLabel4.setText("Password :");
 
         txt1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -112,7 +112,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel5.setBackground(new java.awt.Color(200, 11, 11));
         jLabel5.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(177, 221, 12));
+        jLabel5.setForeground(new java.awt.Color(192, 250, 250));
         jLabel5.setText("Select Type:");
 
         lb1.setBackground(new java.awt.Color(113, 93, 92));
@@ -141,7 +141,7 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(jLabel1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(104, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lb1, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()

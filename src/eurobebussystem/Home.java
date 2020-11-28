@@ -51,6 +51,7 @@ public class Home extends javax.swing.JFrame {
         jToggleButton1.setText("jToggleButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Home");
         setBackground(new java.awt.Color(255, 0, 0));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
@@ -81,15 +82,17 @@ public class Home extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(102, 255, 255));
         jLabel3.setText("Europe Bus Service");
 
+        jLabel4.setBackground(new java.awt.Color(255, 0, 0));
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/home (1).png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/home2.png"))); // NOI18N
         jLabel4.setText("Home");
+        jLabel4.setVerifyInputWhenFocusTarget(false);
 
         btnlogin.setBackground(new java.awt.Color(213, 7, 7));
         btnlogin.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnlogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnlogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/profile.png"))); // NOI18N
+        btnlogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/man.png"))); // NOI18N
         btnlogin.setText("  LogIn");
         btnlogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,7 +103,7 @@ public class Home extends javax.swing.JFrame {
         btnregister.setBackground(new java.awt.Color(213, 7, 7));
         btnregister.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnregister.setForeground(new java.awt.Color(255, 255, 255));
-        btnregister.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/verify.png"))); // NOI18N
+        btnregister.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/register.png"))); // NOI18N
         btnregister.setText("  Register");
         btnregister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +114,7 @@ public class Home extends javax.swing.JFrame {
         btnbook.setBackground(new java.awt.Color(213, 7, 7));
         btnbook.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnbook.setForeground(new java.awt.Color(255, 255, 255));
-        btnbook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/verify.png"))); // NOI18N
+        btnbook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/book.png"))); // NOI18N
         btnbook.setText("  Book");
         btnbook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +125,7 @@ public class Home extends javax.swing.JFrame {
         btnroute.setBackground(new java.awt.Color(213, 7, 7));
         btnroute.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnroute.setForeground(new java.awt.Color(255, 255, 255));
-        btnroute.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/verify.png"))); // NOI18N
+        btnroute.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/route.jpg"))); // NOI18N
         btnroute.setText("Route");
         btnroute.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,7 +160,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(btnregister)
                     .addComponent(btnbook)
                     .addComponent(btnroute))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -170,8 +173,7 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(jLabel3))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -183,9 +185,9 @@ public class Home extends javax.swing.JFrame {
                         .addComponent(btnlogin)
                         .addGap(31, 31, 31)
                         .addComponent(btnregister)
-                        .addGap(32, 32, 32)
+                        .addGap(21, 21, 21)
                         .addComponent(btnbook)
-                        .addGap(29, 29, 29)
+                        .addGap(26, 26, 26)
                         .addComponent(btnroute)
                         .addContainerGap())))
         );
