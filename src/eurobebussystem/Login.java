@@ -38,6 +38,7 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton2 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -52,10 +53,20 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LogIn");
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eurobebussystem/back-button.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 40, 40));
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0,80));
         jPanel3.setForeground(new java.awt.Color(255, 0, 0));
@@ -75,14 +86,14 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(177, 221, 12));
         jLabel4.setText("Password :");
 
-        txt1.setBorder(null);
+        txt1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txt1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txt1KeyReleased(evt);
             }
         });
 
-        txt2.setBorder(null);
+        txt2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txt2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txt2KeyReleased(evt);
@@ -206,6 +217,7 @@ public class Login extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, 530, 320));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 40, 40));
 
         getAccessibleContext().setAccessibleName("login page");
 
@@ -245,8 +257,8 @@ public class Login extends javax.swing.JFrame {
                    ResultSet rs=pst.executeQuery();
                    if(rs.next()){
                      JOptionPane.showMessageDialog(null,"Login  successfully.click ok to book bus.");
-                     Home home=new Home();
-                     home.setVisible(true);
+                     book bk=new book();
+                     bk.setVisible(true);
                      setVisible(false);
                    }
                    else{
@@ -277,8 +289,8 @@ public class Login extends javax.swing.JFrame {
                    ResultSet rs=pst.executeQuery();
                    if(rs.next()){
                      JOptionPane.showMessageDialog(null,"Login  successfully.click ok to see route list.");
-                     Home home=new Home();
-                     home.setVisible(true);
+                     Route Route1=new Route();
+                     Route1.setVisible(true);
                      setVisible(false);
                    }
                    else{
@@ -310,6 +322,12 @@ public class Login extends javax.swing.JFrame {
     private void txt2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt2KeyReleased
        lb2.setText("               ");
     }//GEN-LAST:event_txt2KeyReleased
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       Home hm=new Home();
+       hm.setVisible(true);
+       setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -349,11 +367,13 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> combobtn;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
